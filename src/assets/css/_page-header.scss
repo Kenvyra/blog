@@ -1,0 +1,12 @@
+@use "@fylgja/shadow" as *;
+@use "@fylgja/z-layer" as *;
+
+.page-header {
+    z-index: $layer-4;
+    background-color: var(--color-bg, #fff);
+    box-shadow: $shadow-1;
+}
+
+#offcanvas-menu {
+    --dialog-width: min(350px, 100%);
+}

@@ -1,0 +1,68 @@
+{
+  "name": "fylgja-11ty-starter-template",
+  "version": "1.0.0",
+  "description": "The 11ty powered by Fylgja CSS",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fylgja/11ty-starter-template.git"
+  },
+  "author": "fylgja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fylgja/11ty-starter-template/issues"
+  },
+  "scripts": {
+    "debug": "DEBUG=* npx eleventy",
+    "clean": "rm -rf _site/*",
+    "test:css": "stylelint src/**/*.scss",
+    "test": "npm run test:css",
+    "start": "npm run dev",
+    "dev:js": "npx rollup -c -w",
+    "dev:static": "eleventy --serve",
+    "dev": "npm run dev:js | npm run dev:static",
+    "build:js": "NODE_ENV=production npx rollup -c",
+    "build:css": "postcss _site/css/**/*.css -d _site/css",
+    "build:static": "ELEVENTY_ENV=prod eleventy",
+    "build": "npm run build:static && npm run build:css && npm run build:js",
+    "prebuild": "npm test && npm run clean"
+  },
+  "stylelint": {
+    "extends": "@fylgja/stylelint-config/scss"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 2%",
+    "not dead",
+    "last 3 iOS major versions",
+    "not IE 11"
+  ],
+  "dependencies": {
+    "dialog-polyfill": "^0.5.6",
+    "fylgja": "^1.2.6"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@fylgja/stylelint-config": "^4.2.0",
+    "@grimlink/eleventy-plugin-sass": "^1.0.3",
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "clean-css": "^5.3.1",
+    "cssnano": "^5.1.14",
+    "dayjs": "^1.11.6",
+    "html-minifier": "^4.0.0",
+    "markdown-it-external-anchor": "^1.0.0",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "postcss-preset-env": "^7.8.3",
+    "rollup": "^3.3.0",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "sass": "^1.56.1",
+    "stylelint": "^14.10.0"
+  }
+}

@@ -1,0 +1,48 @@
+// @use "@fylgja/theme" with (
+//     $color-theme: #3740ff
+// );
+@use "base";
+@use "@fylgja/shadow/base" as shadow;
+
+// Components
+@use "@fylgja/aspect-ratio";
+@use "@fylgja/auto-grid";
+@use "@fylgja/avatar";
+@use "@fylgja/badge";
+@use "@fylgja/breadcrumbs";
+@use "@fylgja/button";
+@use "@fylgja/card";
+@use "@fylgja/code";
+@use "@fylgja/container";
+@use "@fylgja/control";
+@use "@fylgja/details";
+@use "@fylgja/dialog";
+@use "@fylgja/form";
+@use "@fylgja/input-group";
+@use "@fylgja/list";
+@use "@fylgja/menu";
+@use "@fylgja/pagination";
+@use "@fylgja/progress";
+@use "@fylgja/scroll-slider";
+@use "@fylgja/section";
+@use "@fylgja/table";
+@use "./social-icon";
+
+// Template Sections
+@use "./page";
+@use "./page-header";
+@use "./page-footer";
+
+// Utilities
+@use "@fylgja/aria-only";
+@use "./skip-link";
+@use "@fylgja/gradient";
+@use "@fylgja/hashlink";
+@use "@fylgja/scrollbar";
+@use "@fylgja/stretched-link";
+@use "@fylgja/transform";
+@use "@fylgja/transition";
+@use "@fylgja/utilpack/defaults/spacers" with (
+    $enable-utilpack-negative-margins: true
+);
+@use "@fylgja/utilpack";

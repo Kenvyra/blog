@@ -1,0 +1,45 @@
+@use "@fylgja/mq" as *;
+@use "@fylgja/sizes" as *;
+
+.page-footer {
+    --selection-bg: hsl(0 0% 100% / 15%);
+    border-top-right-radius: $size-fluid-4;
+    border-top-left-radius: $size-fluid-4;
+    padding-top: $size-fluid-5;
+    padding-bottom: $size-fluid-4;
+    background-color: var(--footer-bg, var(--color-theme));
+    color: var(--footer-color, var(--color-on-theme));
+
+    @media ($sm) and ($xl-max) {
+        --container-padding-x: #{$size-fluid-3};
+    }
+
+    :any-link {
+        color: inherit;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .auto-grid {
+        @media ($md) {
+            --cols: 1fr 220px 220px;
+            --gap: #{$size-fluid-4};
+        }
+    }
+
+    .col-main {
+        grid-column: 1 / -1;
+
+        @media ($md) {
+            grid-column: auto;
+        }
+    }
+
+    .copyright {
+        grid-column: 1 / -1;
+    }
+}
