@@ -1,6 +1,6 @@
 :root {
     --item-spacer: 0 0 1em;
-    --color-theme: #1565c0;
+    --color-theme: #000000;
     --color-on-theme: #fff;
     --color-bg: #fff;
     --color-text: rgba(0, 0, 0, 0.87);
@@ -8,7 +8,7 @@
     --font-size: 1rem;
     --line-height: 1.5;
     --font-weight: 400;
-    --btn-bg: var(--color-theme, #1565c0);
+    --btn-bg: var(--color-theme, #000000);
     --btn-color: var(--color-on-theme, #fff);
     --btn-focus-bg: #1976e0;
     --btn-focus-color: #fff;
@@ -68,7 +68,7 @@ button {
     user-select: none;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-appearance: none;
+    appearance: none;
 }
 
 button:hover,

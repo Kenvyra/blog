@@ -1,4 +1,6 @@
-@use "@fylgja/base";
+@use "@fylgja/base" with (
+    $link-color: #7f7e7e,
+);
 @use "@fylgja/print";
 
 body {

@@ -1,11 +1,12 @@
-const colors = require("@fylgja/colors");
-const colorsHsl = require("@fylgja/colors/hsl");
-
 module.exports = {
     default: {
         name: "Default",
-        theme: "#1565c1",
-        colors: false,
+        theme: "#000000",
+        colors: {
+            "--color-theme": "#000000",
+            "--color-theme-fade": "#e5e5e5",
+            "--color-on-theme": "#ffffff",
+        },
     },
     dark: {
         name: "Night",
@@ -19,43 +20,6 @@ module.exports = {
             "--code-color": "#fff",
             "--shadow-weight": "10%",
             "--shadow-color": "0 0% 0%",
-        },
-    },
-    forest: {
-        name: "Forest",
-        theme: colors.green[8],
-        colors: {
-            "--color-theme": colors.green[8],
-            "--color-theme-fade": `hsl(${colorsHsl.green["8-hsl"]} / 20%)`,
-            "--color-on-theme": colors.green[0],
-            "--btn-theme-focus-bg": colors.green[6],
-            "--btn-theme-active-bg": colors.green[9],
-            "--selection-bg": `hsl(${colorsHsl.green["8-hsl"]} / 20%)`,
-        },
-    },
-    sand: {
-        name: "Sand",
-        theme: colors.yellow[5],
-        colors: {
-            "--color-theme": colors.yellow[5],
-            "--color-theme-fade": `hsl(${colorsHsl.yellow["5-hsl"]} / 20%)`,
-            "--color-on-theme": "#111",
-            "--link-color": colors.yellow[9],
-            "--btn-theme-focus-bg": colors.yellow[7],
-            "--btn-theme-active-bg": colors.yellow[9],
-            "--selection-bg": `hsl(${colorsHsl.yellow["5-hsl"]} / 20%)`,
-        },
-    },
-    lava: {
-        name: "Lava",
-        theme: colors.red[7],
-        colors: {
-            "--color-theme": colors.red[5],
-            "--color-theme-fade": `hsl(${colorsHsl.red["9-hsl"]} / 20%)`,
-            "--color-on-theme": "#111",
-            "--btn-theme-focus-bg": colors.red[7],
-            "--btn-theme-active-bg": colors.red[9],
-            "--selection-bg": `hsl(${colorsHsl.red["8-hsl"]} / 20%)`,
         },
     },
 };

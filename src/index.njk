@@ -21,6 +21,11 @@ style: {
             border-radius: 2rem;
             overflow: hidden;
         }
+
+        #page-hero .preview img {
+            max-height: 60vh;
+            width: auto;
+        }
     "
 }
 ---
@@ -28,39 +33,31 @@ style: {
 <section id="page-hero" class="mb-12" style="--bg: var(--color-theme-fade)">
     <div class="container flex flex-col md-flex-row justify-center md-justify-between items-center">
         <div>
-            <h1 class="title">{{ meta.siteName }}</h1>
+            <h1 class="title">{{ meta.siteName }} is here.</h1>
             <div class="slogan">{{ meta.siteDescription }}</div>
-            {% include "theme-switcher.njk"%}
         </div>
         <div class="preview mt-8 md-mt-0 md-ms-4 xl-ms-8">
-            {% image "https://picsum.photos/id/7/840/840", "Beatiful picture", { lazy: false } %}
+            {% image "./src/assets/images/lockscreen.png", "Lockscreen screenshot", { widths: [1654], lazy: false } %}
         </div>
     </div>
 </section>
 
 <div class="container my-12">
 {% renderTemplate "md" %}
-11ty starter template build using Fylgja CSS.
+# Welcome to Kenvyra!
 
-This 11ty starter is based on our very own site [fylgja.dev](https://fylgja.dev/),
-but slimmed down so it is just bare bones version,
-with just enough things without adding to much.
+Kenvyra is a custom operating system for Android devices based on [LineageOS](https://lineageos.org/) with tons of added [features](/features).
 
-This 11ty started is build with the newest version of 11ty,
-and comes packing with;
+## Why Kenvyra?
 
-- Fylgja CSS
-- Eleventy Sass Compiler
-- PostCSS
-- Rollup
-- Html Dialog with outside click close support
-- Eleventy Img & Navigation
-- Prebuild head with;
-  - OG & Twitter tags
-  - Support for loading page specific CSS and Javascript
-  - and more..
-- Offline page with service worker
+Kenvyra does not compromise on performance and instead utilizes modern compilers to their fullest extent, allowing the builds to be more optimized at the cost of longer build times. We backport changes from upcoming Android releases and optimize core components of Android by hand to ensure you get the most out of your device.
 
-_and more..._
+We believe that users should have the maximum freedom in regards to what runs on their device - that's why we ship builds in **three flavors**: **Vanilla**, **microG** and **GApps**. We do our best to ensure that your device will not "phone home" to Google out of the box and protect your privacy, but users who rely on Google applications will be satisfied by our builds with Pixel GApps without any compromises on functionality.
+
+The ROM includes advanced customization options beyond what LineageOS offers, because we believe that customization and performance or privacy do not conflict unless it is done excessively. We include the customization options that we deem efficient and impacting enough to deserve inclusion. Something's missing? Reach out, and we will consider adding it.
+
+## How do I get Kenvyra?
+
+Official Kenvyra builds can be found on the [devices](/devices) page. If there are no official builds for your device, try looking for unofficial ones on social channels like [XDA](https://forum.xda-developers.com/) or [Telegram](https://telegram.org/). Or get started with [building it yourself](https://github.com/Kenvyra/android_manifest)!
 {% endrenderTemplate %}
 </div>

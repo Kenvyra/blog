@@ -1,15 +1,15 @@
 {
-  "name": "fylgja-11ty-starter-template",
+  "name": "kenvyra-website",
   "version": "1.0.0",
-  "description": "The 11ty powered by Fylgja CSS",
+  "description": "The ",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fylgja/11ty-starter-template.git"
+    "url": "git://github.com/Kenvyra/website.git"
   },
-  "author": "fylgja",
+  "author": "Kenvyra Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fylgja/11ty-starter-template/issues"
+    "url": "https://github.com/Kenvyra/website/issues"
   },
   "scripts": {
     "debug": "DEBUG=* npx eleventy",
@@ -41,28 +41,28 @@
     "fylgja": "^1.2.6"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "@fullhuman/postcss-purgecss": "^5.0.0",
-    "@fylgja/stylelint-config": "^4.2.0",
+    "@fylgja/stylelint-config": "^5.0.3",
     "@grimlink/eleventy-plugin-sass": "^1.0.3",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
-    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "clean-css": "^5.3.1",
+    "clean-css": "^5.3.2",
     "cssnano": "^5.1.14",
-    "dayjs": "^1.11.6",
+    "dayjs": "^1.11.7",
     "html-minifier": "^4.0.0",
     "markdown-it-external-anchor": "^1.0.0",
-    "postcss": "^8.4.19",
-    "postcss-cli": "^10.0.0",
-    "postcss-preset-env": "^7.8.3",
-    "rollup": "^3.3.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-preset-env": "^8.0.1",
+    "rollup": "^3.14.0",
     "rollup-plugin-esbuild": "^5.0.0",
-    "sass": "^1.56.1",
-    "stylelint": "^14.10.0"
+    "sass": "^1.58.0",
+    "stylelint": "^14.0.0"
   }
 }
