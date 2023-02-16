@@ -2,6 +2,7 @@
 name: "Xiaomi Mi 9T / Redmi K20"
 codename: "davinci"
 manufacturer: "Xiaomi"
+maintainers: ["Adrian", "Steve"]
 picture: "./src/assets/images/devices/davinci.png"
 ---
 

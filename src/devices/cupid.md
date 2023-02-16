@@ -2,6 +2,7 @@
 name: "Xiaomi 12"
 codename: "cupid"
 manufacturer: "Xiaomi"
+maintainers: ["Adrian"]
 picture: "https://picsum.photos/id/2/640/480/"
 ---
 
