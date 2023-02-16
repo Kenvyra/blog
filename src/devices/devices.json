@@ -3,7 +3,6 @@
     "permalink": "/devices/{{ page.fileSlug }}/",
     "tags": ["devices"],
     "order": 10,
-    "featured": "",
     "breadcrumbs": {
       "Devices": "/devices/"
     }

@@ -12,7 +12,15 @@
         {%- endfor -%}
         <li itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
             <a itemprop="item" href="{{ page.url }}" aria-current="page">
-                <span itemprop="name">{% if currentBreadcrumbTitle %}{{ currentBreadcrumbTitle }}{% else %}{{ title }}{% endif %}</span>
+                <span itemprop="name">
+                    {% if currentBreadcrumbTitle %}
+                        {{ currentBreadcrumbTitle }}
+                    {% elif title %}
+                        {{ title }}
+                    {% elif codename %}
+                        {{ codename }}
+                    {% endif %}
+                </span>
                 <meta itemprop="position" content="{{ breadcrumbs | length + 1 }}">
             </a>
         </li>

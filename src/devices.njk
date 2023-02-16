@@ -1,0 +1,23 @@
+---
+layout: "page"
+title: "Official Devices"
+description: "Devices officially supported by Kenvyra"
+permalink: "/devices/"
+eleventyNavigation:
+    key: "Devices"
+    order: 5
+---
+
+{% for manufacturer, devices in collections.devices | groupby("data.manufacturer") %}
+    <h2>{{ manufacturer }}</h2>
+
+    <ul class="list-style">
+        {%- for device in devices -%}
+            <li>
+                <a href="{{ device.url }}">
+                    {{ device.data.name }} ({{ device.data.codename }})
+                </a>
+            </li>
+        {%- endfor -%}
+    </ul>
+{% endfor %}
