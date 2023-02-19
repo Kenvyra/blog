@@ -11,13 +11,17 @@ eleventyNavigation:
 {% for manufacturer, devices in collections.devices | groupby("data.manufacturer") %}
     <h2>{{ manufacturer }}</h2>
 
-    <ul class="list-style">
+    <div class="auto-grid">
         {%- for device in devices -%}
-            <li>
-                <a href="{{ device.url }}">
-                    {{ device.data.name }} ({{ device.data.codename }})
-                </a>
-            </li>
+            <a href="{{ device.url }}" class="card">
+                <div class="card-media">
+                    {% image device.data.picture, device.data.name %}
+                </div>
+                <div class="card-content">
+                    <h3 class="h6 inline-block mb-0">{{ device.data.name }}</h3>
+                    <sup><i>{{ device.data.codename }}</i></sup>
+                </div>
+            </a>
         {%- endfor -%}
-    </ul>
+    </div>
 {% endfor %}
