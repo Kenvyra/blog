@@ -2,9 +2,7 @@
 layout: "page"
 title: "FAQ"
 description: "Frequently asked questions"
-style: {
-    inline: ".page-layout {--container-size: 84ch;}"
-}
+style: { inline: ".page-layout {--container-size: 84ch;}" }
 permalink: "/faq/"
 eleventyNavigation:
     key: "FAQ"

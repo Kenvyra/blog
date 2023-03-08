@@ -2,9 +2,7 @@
 layout: "page"
 title: "About us"
 description: "Information on how Kenvyra started and who we are"
-style: {
-    inline: ".page-layout {--container-size: 84ch;}"
-}
+style: { inline: ".page-layout {--container-size: 84ch;}" }
 permalink: "/about/"
 eleventyNavigation:
     key: "About"
@@ -21,16 +19,17 @@ Kenvyra started out of a love-and-hate relationship with [CalyxOS](https://calyx
 
 ## Team
 
-- [Adrian](https://github.com/Gelbpunkt/), co-lead-developer and optimization enthusiast (davinci, cupid)
-- [Steve](https://github.com/Diniboy1123/), co-lead-developer and Android specialist (davinci, redfin)
+-   [Adrian](https://github.com/Gelbpunkt/), co-lead-developer and optimization enthusiast (davinci, cupid)
+-   [Steve](https://github.com/Diniboy1123/), co-lead-developer and Android specialist (davinci, redfin)
 
 We are always looking for contributors! Whether it's porting to a new device or adding new features in the system, let us know what you're doing and submit it for approval on [GitHub](https://github.com/Kenvyra/)!
 
 ## Acknowledgements
 
-- [LineageOS](https://lineageos.org/) for an amazing and well-maintained base
-- [CalyxOS](https://calyxos.org/) for their Chromium and microG prebuilts as well as some privacy-related features
-- [PixelOS](https://pixelos.net/) for their GApps package
-- [YAAP](https://github.com/YAAP/) for full LTO changes
-- [ArrowOS](https://arrowos.net/) for a great launcher and a few features
-- and probably many more who inspired us along the way
+-   [LineageOS](https://lineageos.org/) for an amazing and well-maintained base
+-   [CalyxOS](https://calyxos.org/) for their Chromium and microG prebuilts as well as some privacy-related features
+-   [GrapheneOS](https://grapheneos.org/) for their work on GmsCompat and exec-based spawning
+-   [PixelOS](https://pixelos.net/) for their GApps package
+-   [YAAP](https://github.com/YAAP/) for full LTO changes
+-   [ArrowOS](https://arrowos.net/) for a great launcher and a few features
+-   and probably many more who inspired us along the way
