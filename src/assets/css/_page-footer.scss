@@ -1,17 +1,18 @@
 @use "@fylgja/mq" as *;
 @use "@fylgja/sizes" as *;
+@use "@fylgja/borders" as *;
 
 .page-footer {
     --selection-bg: hsl(0 0% 100% / 15%);
-    border-top-right-radius: $size-fluid-4;
-    border-top-left-radius: $size-fluid-4;
-    padding-top: $size-fluid-5;
-    padding-bottom: $size-fluid-4;
+    border-top-right-radius: $radius-fluid-4;
+    border-top-left-radius: $radius-fluid-4;
+    padding-top: $radius-fluid-4;
+    padding-bottom: $radius-fluid-4;
     background-color: var(--footer-bg, var(--color-theme));
     color: var(--footer-color, var(--color-on-theme));
 
     @media ($sm) and ($xl-max) {
-        --container-padding-x: #{$size-fluid-3};
+        --container-padding-x: #{$radius-fluid-3};
     }
 
     :any-link {
@@ -27,7 +28,7 @@
     .auto-grid {
         @media ($md) {
             --cols: 1fr 220px 220px;
-            --gap: #{$size-fluid-4};
+            --gap: #{$radius-fluid-4};
         }
     }
 

@@ -43,6 +43,7 @@ Kenvyra is full of features, but most of the features aren't actually our work! 
 -   Bluetooth panel in quick settings
 -   Toggle for hotspot from internet tile
 -   Three fingers swipe to screenshot support
+-   Face Unlock
 
 ## Miscellaneous
 
@@ -55,3 +56,4 @@ Kenvyra is full of features, but most of the features aren't actually our work! 
 -   New animations for a lot of settings
 -   Google Sans is the default font
 -   "On a glace" support with GApps
+-   Transparent quick settings
