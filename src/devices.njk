@@ -18,8 +18,7 @@ eleventyNavigation:
                     {% image device.data.picture, device.data.name %}
                 </div>
                 <div class="card-content">
-                    <h3 class="h6 inline-block mb-0">{{ device.data.name }}</h3>
-                    <sup><i>{{ device.data.codename }}</i></sup>
+                    <h3 class="h6 inline-block mb-0">{{ device.data.name }}</h3>&nbsp;<sup><i>{{ device.data.codename }}</i></sup>
                 </div>
             </a>
         {%- endfor -%}
