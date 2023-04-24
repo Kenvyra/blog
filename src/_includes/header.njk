@@ -15,7 +15,33 @@
                     </li>
                 {%- endfor %}
                     <li class="ms-4">
-                        <a href="https://download.kenvyra.xyz/" class="btn -theme">Get Kenvyra</a>
+                        <button class="btn -theme" onclick="document.querySelector('#download-modal').showModal()">Get Kenvyra</button>
+
+                        <dialog id="download-modal">
+                            <label for="device">Device</label>
+
+                            <select id="device" class="mb-2">
+                                <option disabled selected value>Choose a device</option>
+
+                                {%- for device in collections.devices -%}
+                                    <option value="{{ device.data.codename }}">{{ device.data.name }} ({{ device.data.codename }})</option>
+                                {%- endfor -%}
+                            </select>
+
+                            <label for="flavor">Flavor</label>
+
+                            <select id="flavor" class="mb-2">
+                                <option disabled selected value>Choose a flavor</option>
+
+                                <option value="vanilla">Vanilla</option>
+                                <option value="microg">microG</option>
+                                <option value="gapps">GApps</option>
+                            </select>
+
+                            <a id="download" class="btn -theme mb-2 is-disabled">Download</a>
+
+                            <button class="btn" onclick="document.querySelector('#download-modal').close()">Close</button>
+                        </dialog>
                     </li>
                 </ul>
             </nav>
