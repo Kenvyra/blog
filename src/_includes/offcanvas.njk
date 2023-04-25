@@ -21,7 +21,33 @@
             {%- endfor %}
             <li class="hr" role="separator"></li>
             <li class="mt-4">
-                <a href="https://download.kenvyra.xyz/" class="btn -theme w-full">Get Kenvyra</a>
+                <button class="btn -theme w-full" onclick="document.querySelector('#download-modal-offcanvas').showModal()">Get Kenvyra</button>
+
+                <dialog id="download-modal-offcanvas" class="h-auto">
+                    <label for="device-offcanvas">Device</label>
+
+                    <select id="device-offcanvas" class="mb-2">
+                        <option disabled selected value>Choose a device</option>
+
+                        {%- for device in collections.devices -%}
+                            <option value="{{ device.data.codename }}">{{ device.data.name }} ({{ device.data.codename }})</option>
+                        {%- endfor -%}
+                    </select>
+
+                    <label for="flavor-offcanvas">Flavor</label>
+
+                    <select id="flavor-offcanvas" class="mb-2">
+                        <option disabled selected value>Choose a flavor</option>
+
+                        <option value="vanilla">Vanilla</option>
+                        <option value="microg">microG</option>
+                        <option value="gapps">GApps</option>
+                    </select>
+
+                    <a id="download-offcanvas" class="btn -theme mb-2 is-disabled">Download</a>
+
+                    <button class="btn" onclick="document.querySelector('#download-modal-offcanvas').close()">Close</button>
+                </dialog>
             </li>
         </nav>
     </div>

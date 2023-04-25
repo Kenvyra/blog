@@ -8,34 +8,48 @@ window.addEventListener("load", () => {
     }
 });
 
-const device = document.getElementById("device");
-const flavor = document.getElementById("flavor");
-const downloadButton = document.getElementById("download");
+const deviceHeader = document.getElementById("device");
+const flavorHeader = document.getElementById("flavor");
+const downloadButtonHeader = document.getElementById("download");
 
-device.addEventListener("input", updateDownloadButton);
-flavor.addEventListener("input", updateDownloadButton);
+const deviceOffcanvas = document.getElementById("device-offcanvas");
+const flavorOffcanvas = document.getElementById("flavor-offcanvas");
+const downloadButtonOffcanvas = document.getElementById("download-offcanvas");
 
-updateDownloadButton();
 
-async function updateDownloadButton() {
+
+deviceHeader.addEventListener("input", (e) => updateDownloadButton(downloadButtonHeader, deviceHeader, flavorHeader));
+flavorHeader.addEventListener("input", (e) => updateDownloadButton(downloadButtonHeader, deviceHeader, flavorHeader));
+deviceOffcanvas.addEventListener("input", (e) => updateDownloadButton(downloadButtonOffcanvas, deviceOffcanvas, flavorOffcanvas));
+flavorOffcanvas.addEventListener("input", (e) => updateDownloadButton(downloadButtonOffcanvas, deviceOffcanvas, flavorOffcanvas));
+
+
+updateDownloadButton(downloadButtonHeader, deviceHeader, flavorHeader);
+updateDownloadButton(downloadButtonOffcanvas, deviceOffcanvas, flavorOffcanvas);
+
+async function updateDownloadButton(button, device, flavor) {
     if (device.value.length > 0 && flavor.value.length > 0) {
-        downloadButton.textContent = "Preparing download...";
+        button.textContent = "Preparing download...";
 
         try {
             const response = await fetch(`https://raw.githubusercontent.com/Kenvyra/ota/kenvyra-13.0/${device.value}_${flavor.value}.json`);
             const json = await response.json();
 
-            downloadButton.href = json.response[0].url;
-            downloadButton.classList.remove("is-disabled");
-            downloadButton.classList.add("is-active");
+            button.href = json.response[0].url;
+            button.classList.remove("is-disabled");
+            button.classList.add("is-active");
 
-            downloadButton.textContent = "Download";
+            button.textContent = "Download";
         } catch (e) {
-            downloadButton.textContent = "No build available yet";
+            button.removeAttribute("href");
+            button.classList.remove("is-active");
+            button.classList.add("is-disabled");
+            button.textContent = "No build available yet";
         }
     } else {
-        downloadButton.classList.remove("is-active");
-        downloadButton.classList.add("is-disabled");
-        downloadButton.textContent = "Select a device and flavor";
+        button.removeAttribute("href");
+        button.classList.remove("is-active");
+        button.classList.add("is-disabled");
+        button.textContent = "Select a device and flavor";
     }
 }
