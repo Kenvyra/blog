@@ -20,4 +20,4 @@ Reboot to enjoy Kenvyra!
 
 ### April 2023
 
-* Initial stable release with April security patch
+-   Initial stable release with April security patch
