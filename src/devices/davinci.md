@@ -18,6 +18,11 @@ Reboot to enjoy Kenvyra!
 
 ## Changelog
 
+### May 2023
+
+-   Build with May security patch, see the blog for all ROM-side changes
+-   Enabled blurs
+
 ### April 2023
 
 -   Initial stable release with April security patch
