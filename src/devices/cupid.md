@@ -10,7 +10,7 @@ picture: "./src/assets/images/devices/cupid-padded.png"
 
 For a proper clean install, it is recommended to flash the latest MIUI for your region so you have up to date firmware. Then, reboot your phone into fastboot.
 
-Download `boot.img`, `dtbo.img`, `recovery.img` and `vendor_boot.img` from [Arian's Lineage releases](https://github.com/arian-ota/ota/releases/tag/20.0-cupid_gms-6f3818e9).
+Download `boot.img`, `dtbo.img`, `recovery.img` and `vendor_boot.img` from [Arian's Lineage releases](https://github.com/arian-ota/ota/releases/tag/20.0-cupid-812c3096).
 
 Now, run these commands in order:
 
@@ -24,6 +24,14 @@ Run `fastboot reboot recovery` to enter the LineageOS recovery. Click on "Apply 
 Reboot to enjoy Kenvyra!
 
 ## Changelog
+
+### June 2023
+
+-   Enabled burn-in protection
+-   Fixed aliasing around the camera cutout
+-   Updated kernel to 5.10.168
+-   Kernel now compiles with our system-wide LLVM 17, not the ancient kernel platform LLVM
+-   Now compiled for ARMv9 (with SVE disabled) and optimized for Cortex-A710
 
 ### May 2023
 
