@@ -31,6 +31,4 @@ We are always looking for contributors! Whether it's porting to a new device or 
 -   [GrapheneOS](https://grapheneos.org/) for their work on GmsCompat and exec-based spawning
 -   [PixelOS](https://pixelos.net/) for their GApps package
 -   [YAAP](https://github.com/YAAP/) for full LTO changes
--   [ArrowOS](https://arrowos.net/) for a great launcher and a few features
--   [LibreMobileOS](https://libremobileos.com/) for Face Unlock
 -   and probably many more who inspired us along the way

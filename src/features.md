@@ -13,10 +13,11 @@ Kenvyra is full of features, but most of the features aren't actually our work! 
 
 ## Performance
 
--   Entire ROM uses an up-to-date Clang 17 and Rust 1.69 for all system components
+-   Entire ROM uses an up-to-date Clang 17 and Rust 1.72 for all system components
+-   Builds with global ThinLTO for all system components
 -   Lots of performance improvements in bionic, art, SystemUI and other components
 -   zlib is replaced by [zlib-ng](https://github.com/zlib-ng/zlib-ng) with NEON enabled
--   More recent lz4, libpng and libjpeg-turbo versions than stock AOSP
+-   More recent freetype, harfbuzz-ng, lz4, libpng and libjpeg-turbo versions than stock AOSP
 -   The default allocator is [mimalloc](https://github.com/microsoft/mimalloc) instead of scudo
 
 ## Privacy
@@ -28,13 +29,13 @@ Kenvyra is full of features, but most of the features aren't actually our work! 
 -   More sensitive quick settings tiles require unlocking
 -   Captive portal can be toggled and doesn't use Google servers
 -   Uses [ntp.org](https://ntp.org/) instead of the Google NTP servers
--   DNS-over-TLS with Cloudflare provider out of the box
 -   Bromite-based webview instead of stock Chromium on vanilla and microG variants
 -   App Lock support
 -   Secure, exec-based app launching setting
 -   More restrictive sensor permissions
 -   Build ID won't be included in screenshot EXIF information
 -   IMSI won't be sent to the SUPL server
+-   Contact and storage scopes
 
 ## Usability
 
@@ -43,13 +44,11 @@ Kenvyra is full of features, but most of the features aren't actually our work! 
 -   Bluetooth panel in quick settings
 -   Toggle for hotspot from internet tile
 -   Three fingers swipe to screenshot support
--   Face Unlock
 
 ## Miscellaneous
 
 -   New A13 music player design is enforced for all apps
--   System icon shape packs
--   New stock launcher on vanilla and microG variants with simple App Lock and a refreshing UI
+-   New stock launcher on vanilla and microG variants with a refreshing UI
 -   Unlimited Google Photos storage
 -   Monet theming enhancements
 -   Burn-in protection support
@@ -57,3 +56,4 @@ Kenvyra is full of features, but most of the features aren't actually our work! 
 -   Google Sans is the default font
 -   "On a glace" support with GApps
 -   Transparent quick settings
+-   Per-app volume and custom volume steps

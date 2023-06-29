@@ -18,6 +18,15 @@ Reboot to enjoy Kenvyra!
 
 ## Changelog
 
+### June 2023
+
+-   Build with June security patch, see the blog for all ROM-side changes
+-   Fixed FUSE passthrough, it was previously enabled but never working
+-   Switch EROFS compressor from lz4hc to lz4
+-   Updated kernel to 4.14.320
+-   Decreased status bar height
+-   Miscellaneous improvements
+
 ### May 2023
 
 -   Build with May security patch, see the blog for all ROM-side changes
