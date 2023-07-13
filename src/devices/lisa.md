@@ -23,6 +23,16 @@ Reboot to enjoy Kenvyra!
 
 ## Changelog
 
+### July 2023
+
+-   Updated kernel to 5.4.249
+-   Enabled full LTO
+-   Enabled polly
+-   Aligned statusbar with camera
+-   Faster auto-brightness ramp up
+-   Lowered dpi to 400
+-   Other improvements
+
 ### May 2023
 
 -   Initial stable release with May security patch
