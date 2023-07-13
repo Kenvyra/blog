@@ -18,6 +18,6 @@ This new release includes the [July 2023 security patch](https://source.android.
 
 -   Added support for emoji workshop on GApps builds
 
-## Removed
+### Removed
 
 -   We removed support for face unlock. The OSS implementation just isn't ready yet and caused lots of issues

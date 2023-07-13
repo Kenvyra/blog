@@ -30,6 +30,6 @@ This new release includes the [June 2023 security patch](https://source.android.
 -   AGPS can now be toggled in the setup wizard and location settings
 -   Added support for charging control (requires device support)
 
-## Removed
+### Removed
 
 -   Builds after June 30th have removed support for face unlock. The OSS implementation just isn't ready yet and caused lots of issues
