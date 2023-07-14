@@ -34,6 +34,12 @@ Reboot to enjoy Kenvyra!
 
 ## Changelog
 
+### July 2023
+
+-   Build with July security patch, see the blog for all ROM-side changes
+-   Adjusted status bar padding
+-   Reworked SKU handling
+
 ### June 2023
 
 -   **Builds from June 30th onwards use dynamic partitions! You will have to manually upgrade and cannot use OTA for this, but you won't lose your data if you are on older builds!**
