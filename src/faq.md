@@ -23,6 +23,9 @@ Official devices MUST fulfill the following criteria:
 - Working builds for vanilla, microG and GApps
 - userdebug and user builds must both build and work fine
 - Maintainer must be active in the [Developer Telegram group](https://t.me/kenvyra_development)
+- No changes to the ROM (removing/adding applications and so on)
+- No pre-rooted kernels (includes KernelSU)
+- Properly credited commit authorship
 
 They also SHOULD fulfill the following criteria additionally:
 
