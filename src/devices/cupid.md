@@ -25,6 +25,13 @@ Reboot to enjoy Kenvyra!
 
 ## Changelog
 
+### July 2023
+
+-   Rebased kernel on latest CLO tags
+-   Added Lineage health HAL for charging control
+-   Added Lineage power share HAL for reverse charging
+-   Flashing the ROM no longer overwrites custom recoveries
+
 ### June 2023
 
 -   Enabled burn-in protection
