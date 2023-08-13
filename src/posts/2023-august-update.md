@@ -10,6 +10,7 @@ This new release includes the [August 2023 security patch](https://source.androi
 
 -   Fixed crashes when editing screenshots on vanilla/microG variants and disabling SIM cards
 -   GApps builds now have working auto-rotation and battery saver quick settings tiles again
+-   The lockscreen will no longer have a white tint in light mode
 
 ### Enhancements
 
