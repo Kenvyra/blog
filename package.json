@@ -27,7 +27,7 @@
     "prebuild": "npm test && npm run clean"
   },
   "stylelint": {
-    "extends": "@fylgja/stylelint-config/scss"
+    "extends": "@fylgja/stylelint-config/rules/scss"
   },
   "browserslist": [
     "last 1 version",
