@@ -25,6 +25,10 @@ Reboot to enjoy Kenvyra!
 
 ## Changelog
 
+### August 2023
+
+-   Fixed battery usage statistics
+
 ### July 2023
 
 -   Rebased kernel on latest CLO tags

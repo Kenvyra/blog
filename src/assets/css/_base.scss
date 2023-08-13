@@ -1,10 +1,9 @@
-@use "@fylgja/base" with (
-    $link-color: #7f7e7e,
-);
+@use "@fylgja/base";
 @use "@fylgja/print";
 @use "@fylgja/shadow";
 
 :root {
+    --link-color: #7f7e7e;
     --shadow-color: #{shadow.$shadow-color};
     --shadow-weight: #{shadow.$shadow-weight};
 }
