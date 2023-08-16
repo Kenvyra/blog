@@ -18,6 +18,12 @@ Reboot to enjoy Kenvyra!
 
 ## Changelog
 
+### August 2023
+
+-   Build with August security patch, see the blog for all ROM-side changes
+-   Updated kernel to 4.14.322
+-   Improved EROFS performance
+
 ### July 2023
 
 -   Initial stable release with July security patch
