@@ -13,7 +13,7 @@ Kenvyra is full of features, but most of the features aren't actually our work! 
 
 ## Performance
 
--   Entire ROM uses an up-to-date Clang 17 and Rust 1.72 for all system components
+-   Entire ROM uses an up-to-date Clang 18 and Rust 1.72 for all system components
 -   Builds with global ThinLTO for all system components
 -   Lots of performance improvements in bionic, art, SystemUI and other components
 -   zlib is replaced by [zlib-ng](https://github.com/zlib-ng/zlib-ng) with NEON enabled
