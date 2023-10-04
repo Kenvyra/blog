@@ -25,6 +25,10 @@ Reboot to enjoy Kenvyra!
 
 ## Changelog
 
+### September 2023
+
+-   Updated kernel to 5.10.185
+
 ### August 2023
 
 -   Fixed battery usage statistics
