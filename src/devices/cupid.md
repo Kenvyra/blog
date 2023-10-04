@@ -28,6 +28,7 @@ Reboot to enjoy Kenvyra!
 ### September 2023
 
 -   Updated kernel to 5.10.185
+-   Fixed charging time estimates
 
 ### August 2023
 
