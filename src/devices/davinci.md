@@ -34,6 +34,11 @@ Reboot to enjoy Kenvyra!
 
 ## Changelog
 
+### September 2023
+
+-   Build with September security patch, see the blog for all ROM-side changes
+-   Updated kernel to 4.14.326
+
 ### August 2023
 
 -   Build with August security patch, see the blog for all ROM-side changes
