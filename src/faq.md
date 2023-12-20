@@ -6,7 +6,7 @@ style: { inline: ".page-layout {--container-size: 84ch;}" }
 permalink: "/faq/"
 eleventyNavigation:
     key: "FAQ"
-    order: 4
+    order: 5
 ---
 
 ## What are the requirements for official devices?

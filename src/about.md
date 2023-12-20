@@ -19,7 +19,7 @@ Kenvyra started out of a love-and-hate relationship with [CalyxOS](https://calyx
 
 ## Team
 
--   [Adrian](https://github.com/Gelbpunkt/), co-lead-developer and optimization enthusiast (davinci, cupid)
+-   [Adrian](https://github.com/Gelbpunkt/), co-lead-developer and optimization enthusiast (bardock, beryllium, bullhead, cupid, davinci, diting, marble, ziyi)
 -   [Steve](https://github.com/Diniboy1123/), co-lead-developer and Android specialist (davinci, redfin)
 
 We are always looking for contributors! Whether it's porting to a new device or adding new features in the system, let us know what you're doing and submit it for approval on [GitHub](https://github.com/Kenvyra/)!
